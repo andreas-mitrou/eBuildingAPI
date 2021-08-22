@@ -1,7 +1,7 @@
 **An API built using Fast Api and Pydantic.**
 
 **Usage**
-1. pip install fastapi uvicorn
+1. pip install fastapi uvicorn, faker
 2. python3 main.py
 
 **Api**
