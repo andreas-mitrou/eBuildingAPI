@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 from models.Announcement import Announcement
 from data import AnouncementsFakeDb
+import Mock.MockAnouncements as Mock
 
 router = APIRouter(
     prefix="/anouncements",
@@ -11,12 +12,8 @@ items = AnouncementsFakeDb()
 
 @router.get("/")
 async def get_all():
-    return items
+    return Mock.GenerateAnouncements(10)
 
 @router.get("/{id}")
 async def get_by_id(id:int):
-    res = [item for item in items if item.id == id]
-    if len(res):
-        return res[0]
-    else:
-        return None
+   return Mock.GenerateAnouncement()
