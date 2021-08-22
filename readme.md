@@ -1,5 +1,11 @@
-An API built using Fast Api and Pydantic.
+**An API built using Fast Api and Pydantic.**
 
-Usage:
-pip install fastapi uvicorn
-python3 main.py 
+**Usage**
+1. pip install fastapi uvicorn
+2. python3 main.py
+
+**Api**
+http://localhost:8000
+
+**Swagger UI**
+http://localhost:8000/docs
