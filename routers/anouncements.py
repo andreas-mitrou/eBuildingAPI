@@ -1,14 +1,11 @@
 from fastapi import APIRouter
 from models.Announcement import Announcement
-from data import AnouncementsFakeDb
 import Mock.MockAnouncements as Mock
 
 router = APIRouter(
     prefix="/anouncements",
     tags=["anouncements"]
 )
-
-items = AnouncementsFakeDb()
 
 @router.get("/")
 async def get_all():
